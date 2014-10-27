@@ -27,6 +27,7 @@ URxvt*shading: 15
 
 URxvt*scrollStyle: rxvt
 URxvt*scrollBar: false
+URxvt*internalBorder: 0
 
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: /usr/bin/google-chrome-stable

@@ -158,7 +158,6 @@ exec --no-startup-id xrdb -merge ~/.Xdefaults
 exec --no-startup-id sleep 3; xrandr --output LVDS --mode 1600x900;xrandr --output VGA-0 --auto --left-of LVDS
 exec --no-startup-id /usr/bin/conky
 exec --no-startup-id /usr/bin/xset b off
-exec --no-startup-id setroot -solid "#333333"
 
 # Pul Audio controls
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
@@ -184,3 +183,4 @@ bindsym $mod+Shift+n exec google-chrome-stable -incognito
 
 
 focus_follows_mouse no
+exec_always --no-startup-id xsetroot -solid '#000000'
