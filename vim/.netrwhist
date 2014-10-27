@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/alan/.i3'
+let g:netrw_dirhist_2='/home/alan'
+let g:netrw_dirhist_3='/etc/X11/xorg.conf.d'
+let g:netrw_dirhist_4='/etc/sudoers.d'
+let g:netrw_dirhist_5='/home/alan/.vim/bundle/Dockerfile.vim'
+let g:netrw_dirhist_6='/home/alan/.vim/bundle/Dockerfile.vim/ftdetect'
