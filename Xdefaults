@@ -6,6 +6,7 @@ Xft.hitstyle:   hintslight
 Xft.lcdfilter:  lcddefault
 Xft.rgba:       rgb
 
+URxvt*intensityStyles: false
 URxvt*letterSpace: 1
 URxvt*urgentOnBell: False
 URxvt*foreground: #657B83
@@ -20,7 +21,6 @@ urxvt*font: xft:Inconsolata for Powerline :style=Book:antialias=false:size=12, \
             xft:Symbola:style=Regular, \
             xft:unifont:style=Medium:antialias=false
 
-URxvt*termName: rxvt-unicode-256color
 URxvt*title: urxvt
 URxvt*transparent: true
 URxvt*shading: 15
