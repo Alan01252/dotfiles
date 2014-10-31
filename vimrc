@@ -5,7 +5,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
+
+" Syntax Plugins ----------------------------------- {{{
+
 Plugin 'ekalinin/Dockerfile.vim'
+
+" }}}
 
 " Make Vim Pretty ---------------------------------- {{{
 
