@@ -9,6 +9,7 @@ Plugin 'gmarik/Vundle.vim'
 " Syntax Plugins ----------------------------------- {{{
 
 Plugin 'ekalinin/Dockerfile.vim'
+Bundle 'chase/vim-ansible-yaml'
 
 " }}}
 
@@ -53,10 +54,10 @@ set history=50
 set encoding=utf8
 set backup
 set backupskip=/tmp/*
-set backupdir^=$HOME/.vim/backup//
-set dir^=$HOME/.vim/swap//
-set undodir^=$HOME/.vim/undo//
-set viewdir^=$HOME/.vim/view//
+set backupdir=~/.vim/backup//
+set dir=~/.vim/swap//
+set undodir=~/.vim/undo//
+set viewdir=~/.vim/view//
 set undofile
 set undoreload=1000
 set autoread
