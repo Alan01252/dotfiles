@@ -8,6 +8,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Syntax Plugins ----------------------------------- {{{
 
+Plugin 'scrooloose/syntastic'
 Plugin 'ekalinin/Dockerfile.vim'
 Bundle 'chase/vim-ansible-yaml'
 
