@@ -49,6 +49,13 @@ aug ft_git
 
 call vundle#end()
 
+" Helpers ------------------------------------------- {{{
+
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
+
+" }}}
+
 " General settings ---------------------------------- {{{
 set undolevels=1000
 set history=50
