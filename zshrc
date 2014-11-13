@@ -80,8 +80,6 @@ export LANG=en_GB.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 setxkbmap gb
 alias vi="vim"
-eval `ssh-agent -s`
-ssh-add ~/.ssh/alan.hollis
 
 alias ls="CLICOLOR_FORCE=1 ls -G"
 alias less="less -R"
@@ -122,3 +120,5 @@ bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
 
 setopt MENU_COMPLETE
+
+eval $(keychain --eval --agents ssh -Q --quiet ~/.ssh/alan.hollis)
