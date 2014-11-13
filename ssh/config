@@ -1,0 +1,19 @@
+Host docker-intellij
+  User      intellij
+  Port      2222
+  HostName  127.0.0.1
+  RemoteForward 64713 localhost:4713
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  IdentityFile ~/.ssh/alan.hollis
+
+Host docker-phpstorm
+  User      intellij
+  Port      2223
+  HostName  127.0.0.1
+  RemoteForward 64713 localhost:4713
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  IdentityFile ~/.ssh/alan.hollis
+  StrictHostKeyChecking no
+
