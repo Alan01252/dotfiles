@@ -11,6 +11,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'ekalinin/Dockerfile.vim'
 Bundle 'chase/vim-ansible-yaml'
+Bundle 'ntpeters/vim-better-whitespace'
 
 " }}}
 
