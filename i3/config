@@ -90,6 +90,10 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# make sure workspace 1 is always on laptop
+workspace 1 output LVDS
+workspace 2 output VGA-0
+
 # switch to workspace
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
@@ -157,7 +161,6 @@ bar {
 
 
 exec --no-startup-id xrdb -merge ~/.Xdefaults
-exec --no-startup-id sleep 3; xrandr --output LVDS --mode 1600x900;xrandr --output VGA-0 --auto --left-of LVDS
 exec --no-startup-id /usr/bin/conky
 exec --no-startup-id /usr/bin/xset b off
 
