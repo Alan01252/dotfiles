@@ -56,6 +56,19 @@ Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 
 " }}}
+"
+" Mappings ------------------------------------------- {{{
+
+" Big W to little W
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
+
+" Pasing
+set pastetoggle=<F2>
+
+" }}}
 
 " General settings ---------------------------------- {{{
 set undolevels=1000
