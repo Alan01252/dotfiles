@@ -12,6 +12,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'ekalinin/Dockerfile.vim'
 Bundle 'chase/vim-ansible-yaml'
 Bundle 'ntpeters/vim-better-whitespace'
+Bundle 'git@github.com:Glench/Vim-Jinja2-Syntax.git'
 
 " }}}
 
