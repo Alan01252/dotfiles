@@ -49,8 +49,6 @@ aug ft_git
 
 " }}}
 
-call vundle#end()
-
 " Helpers ------------------------------------------- {{{
 
 Bundle 'mattn/webapi-vim'
@@ -59,7 +57,8 @@ Bundle 'git@github.com:sjbach/lusty.git'
 Bundle 'git@github.com:fholgado/minibufexpl.vim.git'
 
 " }}}
-"
+
+call vundle#end()
 " Mappings ------------------------------------------- {{{
 
 " Big W to little W
