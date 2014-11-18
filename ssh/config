@@ -17,3 +17,5 @@ Host docker-phpstorm
   IdentityFile ~/.ssh/alan.hollis
   StrictHostKeyChecking no
 
+Host 127.0.0.*
+    StrictHostKeyChecking no
