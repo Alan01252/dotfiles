@@ -55,6 +55,8 @@ call vundle#end()
 
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
+Bundle 'git@github.com:sjbach/lusty.git'
+Bundle 'git@github.com:fholgado/minibufexpl.vim.git'
 
 " }}}
 "
