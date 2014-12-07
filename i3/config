@@ -163,6 +163,9 @@ bar {
 exec --no-startup-id xrdb -merge ~/.Xdefaults
 exec --no-startup-id /usr/bin/conky
 exec --no-startup-id /usr/bin/xset b off
+exec --no-startup-id i3-msg 'workspace 2; exec google-chrome-stable'
+exec --no-startup-id i3-msg 'workspace 1; exec urxvt'
+exec --no-startup-id i3-msg '[class="URxvt"] focus'
 
 # Pul Audio controls
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
