@@ -91,6 +91,8 @@ set nofsync
 set laststatus=2
 set hidden
 set clipboard=unnamedplus
+set linebreak
+set wrap
 " }}}
 "
 " Buffer settings ------------------------------------ {{{
