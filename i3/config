@@ -193,3 +193,5 @@ bindsym $mod+Shift+i exec /home/alan/workspace/bin/helpers/imgur-screenshot/imgu
 
 focus_follows_mouse no
 exec_always --no-startup-id feh --bg-scale '/home/alan/pictures/wallpaper.png'
+
+exec /home/alan/.dropbox-dist/dropboxd
