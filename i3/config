@@ -18,7 +18,7 @@ set $mod Mod4
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 font xft:Inconsolata for Powerline 10
 # Before i3 v4.8, we used to recommend this one as the default:
-# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+#font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
 # clear in small sizes. However, its unicode glyph coverage is limited, the old
 # X core fonts rendering does not support right-to-left and this being a bitmap
@@ -163,7 +163,6 @@ bar {
 exec --no-startup-id xrdb -merge ~/.Xdefaults
 exec --no-startup-id /usr/bin/conky
 exec --no-startup-id /usr/bin/xset b off
-exec --no-startup-id i3-msg 'workspace 2; exec google-chrome-stable'
 exec --no-startup-id i3-msg 'workspace 1; exec urxvt'
 exec --no-startup-id i3-msg '[class="URxvt"] focus'
 
@@ -194,5 +193,4 @@ bindsym $mod+Shift+i exec /home/alan/workspace/bin/helpers/imgur-screenshot/imgu
 focus_follows_mouse no
 exec_always --no-startup-id feh --bg-scale '/home/alan/pictures/wallpaper.png'
 
-exec /home/alan/.dropbox-dist/dropboxd
 exec sudo vboxreload
