@@ -128,3 +128,8 @@ let g:solarized_termcolors=256
 colorscheme jellybeans
 
 filetype plugin indent on
+syn on se title
+set tabstop=4
+set softtabstop=0 noexpandtab
+set shiftwidth=4
+set noexpandtab
