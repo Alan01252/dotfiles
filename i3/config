@@ -194,3 +194,4 @@ focus_follows_mouse no
 exec_always --no-startup-id feh --bg-scale '/home/alan/pictures/wallpaper.png'
 
 exec sudo vboxreload
+exec newgrp docker
