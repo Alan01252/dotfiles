@@ -1,42 +1,42 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
+call plug#begin('~/.vim/plugged')
 
-" Syntax Plugins ----------------------------------- {{{
 
-Plugin 'scrooloose/syntastic'
-Plugin 'ekalinin/Dockerfile.vim'
-Bundle 'chase/vim-ansible-yaml'
-Bundle 'ntpeters/vim-better-whitespace'
-Bundle 'git@github.com:Glench/Vim-Jinja2-Syntax.git'
+" Syntax Plugs ----------------------------------- {{{
+
+Plug 'scrooloose/syntastic'
+Plug 'ekalinin/Dockerfile.vim'
+Plug 'avakhov/vim-yaml'
+Plug 'chase/vim-ansible-yaml'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'git@github.com:Glench/Vim-Jinja2-Syntax.git'
 
 " }}}
 
 " Make Vim Pretty ---------------------------------- {{{
 
 " Color schemes
-Bundle "nanotech/jellybeans.vim"
+Plug 'nanotech/jellybeans.vim'
 " Add relative line numbers
-Bundle 'godlygeek/csapprox'
-Bundle 'myusuf3/numbers.vim'
+Plug 'godlygeek/csapprox'
+Plug 'myusuf3/numbers.vim'
 " Syntax
-Bundle 'tpope/vim-markdown'
+Plug 'tpope/vim-markdown'
 " Better pasting
-Bundle 'sickill/vim-pasta'
+Plug 'sickill/vim-pasta'
 " Status line
-Plugin 'bling/vim-airline'
+Plug 'bling/vim-airline'
 
 " }}}
 
 " Version control ---------------------------------- {{{
 
 " Git plugins
-Bundle 'tpope/vim-git'
-Bundle 'tpope/vim-fugitive'
+Plug 'tpope/vim-git'
+Plug 'tpope/vim-fugitive'
 
 aug ft_git
     au!
@@ -51,14 +51,14 @@ aug ft_git
 
 " Helpers ------------------------------------------- {{{
 
-Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
-Bundle 'git@github.com:sjbach/lusty.git'
-Bundle 'git@github.com:fholgado/minibufexpl.vim.git'
+Plug 'mattn/webapi-vim'
+Plug 'mattn/gist-vim'
+Plug 'git@github.com:sjbach/lusty.git'
+Plug 'git@github.com:fholgado/minibufexpl.vim.git'
 
 " }}}
 
-call vundle#end()
+call plug#end()
 " Mappings ------------------------------------------- {{{
 
 " Big W to little W
