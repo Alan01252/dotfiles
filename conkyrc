@@ -7,7 +7,6 @@ net_avg_samples 1
 cpu_avg_samples 2
 
 imlib_cache_size 0
-double_buffer yes
 
 format_human_readable
 
@@ -16,7 +15,7 @@ format_human_readable
 #####################
 use_xft yes
 xftfont inconsolata:size=9
-override_utf8_locale yes
+override_utf8_locale no
 text_buffer_size 2048
 
 default_color black
@@ -29,12 +28,29 @@ draw_borders no
 #############################
 # - Window specifications - #
 #############################
+own_window yes
 own_window_class Conky
+background yes
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar
+out_to_console false
+update_interval 3
+double_buffer  yes
+own_window_argb_visual no
+own_window_argb_value 0
+background no
 
+draw_shades no
+draw_borders no
+draw_outline no
+
+minimum_size 300
 alignment top_left
 gap_y 25
 gap_x 25
 border_inner_margin 8
+
 
 
 #########################
@@ -50,19 +66,19 @@ ${goto 70}Uptime: ${alignr}${uptime}
 # |--UPDATES
 ${goto 70}Updates: ${alignr}${font Droid Sans:style=Bold:size=8}${execi 10800 pacman -Qu | wc -l}${font} Packages
 # |--CPU
-${voffset 6}${font Droid Sans:style=Bold:size=8}CPU${font}${offset -23}${voffset 10}${cpubar cpu0 4,18}
+${voffset 6}${font Droid Sans:style=Bold:size=8}CPU${font}${offset -23}${voffset 10}
 ${voffset -23}${goto 70}Core 1: ${font Droid Sans:style=Bold:size=8}${cpu cpu1}%${font} ${alignr}${cpugraph cpu1 7,40 EEEEEE}
 ${voffset 1}${goto 70}Core 2: ${font Droid Sans:style=Bold:size=8}${cpu cpu2}%${font} ${alignr}${cpugraph cpu2 7,40 EEEEEE}
 ${voffset 1}${goto 70}Core 3: ${font Droid Sans:style=Bold:size=8}${cpu cpu3}%${font} ${alignr}${cpugraph cpu3 7,40 EEEEEE}
 ${voffset 1}${goto 70}Core 4: ${font Droid Sans:style=Bold:size=8}${cpu cpu4}%${font} ${alignr}${cpugraph cpu4 7,40 EEEEEE}
 # |--MEM
 ${voffset 6}${font Droid Sans:style=Bold:size=8}RAM${font}${goto 70}RAM: ${font Droid Sans:style=Bold:size=8}$memperc%${font}
-${voffset 6}${offset 1}${voffset -8}${membar 4,18}${voffset 4}${goto 70}${voffset -2}Free: ${font Droid Sans:style=Bold:size=8}${memeasyfree}${font} ${goto 170}Used: ${font Droid Sans:style=Bold:size=8}${mem}${font}
+${goto 70}${voffset 5}Free: ${font Droid Sans:style=Bold:size=8}${memeasyfree}${font} ${goto 170}Used: ${font Droid Sans:style=Bold:size=8}${mem}${font}
 # |--SWAP
 ${voffset 5}${font Droid Sans:style=Bold:size=8}SWP${font}${goto 70}Swap: ${font Droid Sans:style=Bold:size=8}${swapperc}%${font}
-${voffset 4}${offset 1}${voffset -7}${swapbar 4,18}${voffset 4}${goto 70}Free: ${font Droid Sans:style=Bold:size=8}$swapmax${font} ${goto 170}Used: ${font Droid Sans:style=Bold:size=8}$swap${font}
+${voffset 4}${goto 70}Free: ${font Droid Sans:style=Bold:size=8}$swapmax${font} ${goto 170}Used: ${font Droid Sans:style=Bold:size=8}$swap${font}
 # |--PROC
-${voffset 4}${font Droid Sans:style=Bold:size=8}TOP${font}${voffset 0}${goto 160}CPU${goto 200}RAM
+${voffset 4}${font Droid Sans:style=Bold:size=8}TOP${font}${voffset 0}${goto 157}CPU${goto 185}RAM
 ${voffset -1}${goto 70}${top name 1}${font Droid Sans:style=Bold:size=8} ${goto 150}${top cpu 1}${alignr }${top mem 1}${font}
 ${voffset -1}${goto 70}${top name 2}${font Droid Sans:style=Bold:size=8} ${goto 150}${top cpu 2}${alignr }${top mem 2}${font}
 ${voffset -1}${goto 70}${top name 3}${font Droid Sans:style=Bold:size=8} ${goto 150}${top cpu 3}${alignr }${top mem 3}${font}
