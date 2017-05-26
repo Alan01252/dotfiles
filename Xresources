@@ -1,0 +1,74 @@
+Xft.lcdfilter: lcddefault
+Xft.antialias: true
+Xft.autohint: 0
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.dpi: 96
+
+URxvt*intensityStyles: false
+URxvt*letterSpace: 1
+URxvt*urgentOnBell: False
+URxvt*foreground: #657B83
+URxvt*background: #002b36
+!!*fading: 40
+*cursourColor: #93A1A1
+
+URxvt*title: urxvt
+URxvt*transparent: true
+URxvt*shading: 15
+
+URxvt*scrollStyle: rxvt
+URxvt*scrollBar: false
+URxvt*internalBorder: 0
+
+URxvt*font: xft:Source\ Code\ Pro\ Medium:pixelsize=13:antialias=true:hinting=true,\
+	    xft:Source\ Code\ Pro\ Medium:pixelsize=13:antialias=true:hinting=true
+
+URxvt.perl-ext-common: default,matcher,keyboard-select,clipboard
+URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.clipboard.autocopy: true
+
+
+URxvt.url-launcher: /usr/bin/google-chrome-stable
+URxvt.matcher.button: 1
+
+! special
+*.foreground:   #c5c8c6
+*.background:   #1d1f21
+*.cursorColor:  #c5c8c6
+
+! black
+*.color0:       #282a2e
+*.color8:       #373b41
+
+! red
+*.color1:       #a54242
+*.color9:       #cc6666
+
+! green
+*.color2:       #8c9440
+*.color10:      #b5bd68
+
+! yellow
+*.color3:       #de935f
+*.color11:      #f0c674
+
+! blue
+*.color4:       #5f819d
+*.color12:      #81a2be
+
+! magenta
+*.color5:       #85678f
+*.color13:      #b294bb
+
+! cyan
+*.color6:       #5e8d87
+*.color14:      #8abeb7
+
+! white
+*.color7:       #707880
+*.color15:      #c5c8c6
+
