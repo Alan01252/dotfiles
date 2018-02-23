@@ -130,7 +130,6 @@ bindkey -M vicmd v edit-command-line
 
 setopt MENU_COMPLETE
 
-eval $(keychain --eval --agents ssh -Q --quiet ~/.ssh/alan.hollis)
 
 #evaluate a zkbd compatible hash;
 # to add other keys to this hash, see: man 5 terminfo
@@ -181,3 +180,6 @@ if [ -f '/home/alan/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/a
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="$PATH:/home/alan/workspace/istio-0.1.5/bin:/home/alan/.gem/ruby/2.4.0/bin"
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
